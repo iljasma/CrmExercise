@@ -15,7 +15,7 @@ namespace CrmExercise.WebUI.Controllers
 {
   public class AccountController : Controller
   {
-    private readonly ICrmAccountRepository _repository;
+    private ICrmAccountRepository _repository;
     public int PageSize = 4;
 
     public AccountController(ICrmAccountRepository accountRepository)
@@ -63,5 +63,20 @@ namespace CrmExercise.WebUI.Controllers
 
       return View(model);
     }
+
+    #region IDisposable Members
+
+    protected override void Dispose(bool disposing) {
+      if (disposing)
+      {
+        // Release managed resources.
+        this._repository?.Dispose();
+        if (this._repository != null) this._repository = null;
+      }
+      // Release unmanaged resources.
+
+    }
+
+    #endregion
   }
 }
