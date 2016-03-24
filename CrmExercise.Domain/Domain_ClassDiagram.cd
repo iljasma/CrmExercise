@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CrmExercise.Domain.Concrete.CrmAccountRepository">
+    <Position X="2.25" Y="2.5" Width="2" />
+    <Members>
+      <Method Name="~CrmAccountRepository" Hidden="true" />
+      <Method Name="GetAccounts" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAAAAAAIAAAAAAAAAAAACIAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\CrmAccountRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_svcContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrmExercise.Domain.Concrete.ServiceContextFactory">
+    <Position X="6" Y="5" Width="2" />
+    <AssociationLine Name="ServiceClient" Type="Microsoft.Xrm.Tooling.Connector.CrmServiceClient" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="6.194" />
+        <Point X="9.25" Y="6.194" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAiAAAAAAAAAEAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Concrete\ServiceContextFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ServiceClient" />
+      <Property Name="SvcContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient">
+    <Position X="9.25" Y="5.75" Width="2.5" />
+    <Members>
+      <Property Name="ConnectedOrgPublishedEndpoints" Hidden="true" />
+      <Property Name="ConnectedOrgUniqueName" Hidden="true" />
+      <Property Name="ConnectedOrgVersion" Hidden="true" />
+      <Property Name="ConnectionLockObject" Hidden="true" />
+      <Property Name="IsBatchOperationsAvailable" Hidden="true" />
+      <Property Name="IsReady" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmFilterConditionItem" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Enum Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.LogicalSearchOperator" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.PickListItem" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Enum Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ImportStatus" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Enum Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.LogicalSortOrder" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.PickListMetaElement" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Enum Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.FormTypeId" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ImportFileItem" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.ImportRequest" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="Microsoft.Xrm.Tooling.Connector.CrmServiceClient.CrmSearchFilter" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ServiceContext">
+    <Position X="13.75" Y="8.5" Width="2.5" />
+    <Members>
+      <Property Name="AccountLeadsSet" Hidden="true" />
+      <Property Name="ActivityMimeAttachmentSet" Hidden="true" />
+      <Property Name="ActivityPartySet" Hidden="true" />
+      <Property Name="ActivityPointerSet" Hidden="true" />
+      <Property Name="AnnotationSet" Hidden="true" />
+      <Property Name="AnnualFiscalCalendarSet" Hidden="true" />
+      <Property Name="AsyncOperationSet" Hidden="true" />
+      <Property Name="AttributeMapSet" Hidden="true" />
+      <Property Name="AuditSet" Hidden="true" />
+      <Property Name="AzureServiceConnectionSet" Hidden="true" />
+      <Property Name="BulkDeleteFailureSet" Hidden="true" />
+      <Property Name="BulkDeleteOperationSet" Hidden="true" />
+      <Property Name="BulkOperationLogSet" Hidden="true" />
+      <Property Name="BulkOperationSet" Hidden="true" />
+      <Property Name="BusinessUnitNewsArticleSet" Hidden="true" />
+      <Property Name="BusinessUnitSet" Hidden="true" />
+      <Property Name="CalendarSet" Hidden="true" />
+      <Property Name="CampaignActivityItemSet" Hidden="true" />
+      <Property Name="CampaignActivitySet" Hidden="true" />
+      <Property Name="CampaignItemSet" Hidden="true" />
+      <Property Name="CampaignResponseSet" Hidden="true" />
+      <Property Name="CampaignSet" Hidden="true" />
+      <Property Name="ChannelAccessProfileEntityAccessLevelSet" Hidden="true" />
+      <Property Name="ChannelAccessProfileRuleItemSet" Hidden="true" />
+      <Property Name="ChannelAccessProfileRuleSet" Hidden="true" />
+      <Property Name="ChannelAccessProfileSet" Hidden="true" />
+      <Property Name="ChannelPropertyGroupSet" Hidden="true" />
+      <Property Name="ChannelPropertySet" Hidden="true" />
+      <Property Name="ColumnMappingSet" Hidden="true" />
+      <Property Name="CompetitorProductSet" Hidden="true" />
+      <Property Name="CompetitorSalesLiteratureSet" Hidden="true" />
+      <Property Name="ConnectionRoleAssociationSet" Hidden="true" />
+      <Property Name="ConnectionRoleObjectTypeCodeSet" Hidden="true" />
+      <Property Name="ConnectionRoleSet" Hidden="true" />
+      <Property Name="ConnectionSet" Hidden="true" />
+      <Property Name="ConstraintBasedGroupSet" Hidden="true" />
+      <Property Name="ContactInvoicesSet" Hidden="true" />
+      <Property Name="ContactLeadsSet" Hidden="true" />
+      <Property Name="ContactOrdersSet" Hidden="true" />
+      <Property Name="ContactQuotesSet" Hidden="true" />
+      <Property Name="ContractDetailSet" Hidden="true" />
+      <Property Name="ContractSet" Hidden="true" />
+      <Property Name="ContractTemplateSet" Hidden="true" />
+      <Property Name="ConvertRuleItemSet" Hidden="true" />
+      <Property Name="ConvertRuleSet" Hidden="true" />
+      <Property Name="CustomControlDefaultConfigSet" Hidden="true" />
+      <Property Name="CustomControlResourceSet" Hidden="true" />
+      <Property Name="CustomControlSet" Hidden="true" />
+      <Property Name="CustomerAddressSet" Hidden="true" />
+      <Property Name="CustomerOpportunityRoleSet" Hidden="true" />
+      <Property Name="CustomerRelationshipSet" Hidden="true" />
+      <Property Name="DependencySet" Hidden="true" />
+      <Property Name="DiscountSet" Hidden="true" />
+      <Property Name="DiscountTypeSet" Hidden="true" />
+      <Property Name="DisplayStringSet" Hidden="true" />
+      <Property Name="DocumentTemplateSet" Hidden="true" />
+      <Property Name="DuplicateRecordSet" Hidden="true" />
+      <Property Name="DuplicateRuleConditionSet" Hidden="true" />
+      <Property Name="DuplicateRuleSet" Hidden="true" />
+      <Property Name="DynamicPropertyAssociationSet" Hidden="true" />
+      <Property Name="DynamicPropertyInstanceSet" Hidden="true" />
+      <Property Name="DynamicPropertyOptionSetItemSet" Hidden="true" />
+      <Property Name="DynamicPropertySet" Hidden="true" />
+      <Property Name="EmailServerProfileSet" Hidden="true" />
+      <Property Name="EntitlementChannelSet" Hidden="true" />
+      <Property Name="EntitlementContactsSet" Hidden="true" />
+      <Property Name="EntitlementProductsSet" Hidden="true" />
+      <Property Name="EntitlementSet" Hidden="true" />
+      <Property Name="EntitlementTemplateChannelSet" Hidden="true" />
+      <Property Name="EntitlementTemplateProductsSet" Hidden="true" />
+      <Property Name="EntitlementTemplateSet" Hidden="true" />
+      <Property Name="EntityMapSet" Hidden="true" />
+      <Property Name="EquipmentSet" Hidden="true" />
+      <Property Name="ExchangeSyncIdMappingSet" Hidden="true" />
+      <Property Name="ExternalPartyItemSet" Hidden="true" />
+      <Property Name="ExternalPartySet" Hidden="true" />
+      <Property Name="FaxSet" Hidden="true" />
+      <Property Name="FieldPermissionSet" Hidden="true" />
+      <Property Name="FieldSecurityProfileSet" Hidden="true" />
+      <Property Name="FixedMonthlyFiscalCalendarSet" Hidden="true" />
+      <Property Name="GoalRollupQuerySet" Hidden="true" />
+      <Property Name="GoalSet" Hidden="true" />
+      <Property Name="HierarchyRuleSet" Hidden="true" />
+      <Property Name="HierarchySecurityConfigurationSet" Hidden="true" />
+      <Property Name="ImportEntityMappingSet" Hidden="true" />
+      <Property Name="ImportFileSet" Hidden="true" />
+      <Property Name="ImportJobSet" Hidden="true" />
+      <Property Name="ImportLogSet" Hidden="true" />
+      <Property Name="ImportMapSet" Hidden="true" />
+      <Property Name="ImportSet" Hidden="true" />
+      <Property Name="IncidentKnowledgeBaseRecordSet" Hidden="true" />
+      <Property Name="IncidentResolutionSet" Hidden="true" />
+      <Property Name="InvalidDependencySet" Hidden="true" />
+      <Property Name="InvoiceDetailSet" Hidden="true" />
+      <Property Name="InvoiceSet" Hidden="true" />
+      <Property Name="IsvConfigSet" Hidden="true" />
+      <Property Name="KbArticleCommentSet" Hidden="true" />
+      <Property Name="KbArticleSet" Hidden="true" />
+      <Property Name="KbArticleTemplateSet" Hidden="true" />
+      <Property Name="KnowledgeArticleIncidentSet" Hidden="true" />
+      <Property Name="KnowledgeArticleSet" Hidden="true" />
+      <Property Name="KnowledgeArticleViewsSet" Hidden="true" />
+      <Property Name="KnowledgeBaseRecordSet" Hidden="true" />
+      <Property Name="KnowledgeSearchModelSet" Hidden="true" />
+      <Property Name="LanguageLocaleSet" Hidden="true" />
+      <Property Name="LeadAddressSet" Hidden="true" />
+      <Property Name="LeadCompetitorsSet" Hidden="true" />
+      <Property Name="LeadProductSet" Hidden="true" />
+      <Property Name="LetterSet" Hidden="true" />
+      <Property Name="LicenseSet" Hidden="true" />
+      <Property Name="ListMemberSet" Hidden="true" />
+      <Property Name="ListSet" Hidden="true" />
+      <Property Name="LookUpMappingSet" Hidden="true" />
+      <Property Name="MailboxSet" Hidden="true" />
+      <Property Name="MailboxStatisticsSet" Hidden="true" />
+      <Property Name="MailboxTrackingFolderSet" Hidden="true" />
+      <Property Name="MailMergeTemplateSet" Hidden="true" />
+      <Property Name="MetricSet" Hidden="true" />
+      <Property Name="MobileOfflineProfileItemAssociationSet" Hidden="true" />
+      <Property Name="MobileOfflineProfileItemSet" Hidden="true" />
+      <Property Name="MobileOfflineProfileSet" Hidden="true" />
+      <Property Name="MonthlyFiscalCalendarSet" Hidden="true" />
+      <Property Name="msdyn_PostAlbumSet" Hidden="true" />
+      <Property Name="msdyn_PostConfigSet" Hidden="true" />
+      <Property Name="msdyn_PostRuleConfigSet" Hidden="true" />
+      <Property Name="msdyn_wallsavedquerySet" Hidden="true" />
+      <Property Name="msdyn_wallsavedqueryusersettingsSet" Hidden="true" />
+      <Property Name="OfficeGraphDocumentSet" Hidden="true" />
+      <Property Name="OpportunityCloseSet" Hidden="true" />
+      <Property Name="OpportunityCompetitorsSet" Hidden="true" />
+      <Property Name="OpportunityProductSet" Hidden="true" />
+      <Property Name="OrderCloseSet" Hidden="true" />
+      <Property Name="OrganizationSet" Hidden="true" />
+      <Property Name="OrganizationUISet" Hidden="true" />
+      <Property Name="OwnerMappingSet" Hidden="true" />
+      <Property Name="PersonalDocumentTemplateSet" Hidden="true" />
+      <Property Name="PickListMappingSet" Hidden="true" />
+      <Property Name="PluginAssemblySet" Hidden="true" />
+      <Property Name="PluginTraceLogSet" Hidden="true" />
+      <Property Name="PluginTypeSet" Hidden="true" />
+      <Property Name="PluginTypeStatisticSet" Hidden="true" />
+      <Property Name="PositionSet" Hidden="true" />
+      <Property Name="PostCommentSet" Hidden="true" />
+      <Property Name="PostFollowSet" Hidden="true" />
+      <Property Name="PostLikeSet" Hidden="true" />
+      <Property Name="PostSet" Hidden="true" />
+      <Property Name="PriceLevelSet" Hidden="true" />
+      <Property Name="PrincipalEntityMapSet" Hidden="true" />
+      <Property Name="PrincipalObjectAttributeAccessSet" Hidden="true" />
+      <Property Name="PrivilegeSet" Hidden="true" />
+      <Property Name="ProcessSessionSet" Hidden="true" />
+      <Property Name="ProcessStageSet" Hidden="true" />
+      <Property Name="ProcessTriggerSet" Hidden="true" />
+      <Property Name="ProductAssociationSet" Hidden="true" />
+      <Property Name="ProductPriceLevelSet" Hidden="true" />
+      <Property Name="ProductSalesLiteratureSet" Hidden="true" />
+      <Property Name="ProductSet" Hidden="true" />
+      <Property Name="ProductSubstituteSet" Hidden="true" />
+      <Property Name="PublisherAddressSet" Hidden="true" />
+      <Property Name="PublisherSet" Hidden="true" />
+      <Property Name="QuarterlyFiscalCalendarSet" Hidden="true" />
+      <Property Name="QueueItemSet" Hidden="true" />
+      <Property Name="QueueMembershipSet" Hidden="true" />
+      <Property Name="QueueSet" Hidden="true" />
+      <Property Name="QuoteCloseSet" Hidden="true" />
+      <Property Name="QuoteDetailSet" Hidden="true" />
+      <Property Name="QuoteSet" Hidden="true" />
+      <Property Name="RecommendationModelMappingSet" Hidden="true" />
+      <Property Name="RecommendationModelSet" Hidden="true" />
+      <Property Name="RecommendationModelVersionHistorySet" Hidden="true" />
+      <Property Name="RecommendationModelVersionSet" Hidden="true" />
+      <Property Name="RecurrenceRuleSet" Hidden="true" />
+      <Property Name="RecurringAppointmentMasterSet" Hidden="true" />
+      <Property Name="RelationshipRoleMapSet" Hidden="true" />
+      <Property Name="RelationshipRoleSet" Hidden="true" />
+      <Property Name="ReportCategorySet" Hidden="true" />
+      <Property Name="ReportEntitySet" Hidden="true" />
+      <Property Name="ReportLinkSet" Hidden="true" />
+      <Property Name="ReportSet" Hidden="true" />
+      <Property Name="ReportVisibilitySet" Hidden="true" />
+      <Property Name="ResourceGroupSet" Hidden="true" />
+      <Property Name="ResourceSet" Hidden="true" />
+      <Property Name="ResourceSpecSet" Hidden="true" />
+      <Property Name="RibbonCustomizationSet" Hidden="true" />
+      <Property Name="RolePrivilegesSet" Hidden="true" />
+      <Property Name="RoleSet" Hidden="true" />
+      <Property Name="RoleTemplatePrivilegesSet" Hidden="true" />
+      <Property Name="RollupFieldSet" Hidden="true" />
+      <Property Name="RoutingRuleItemSet" Hidden="true" />
+      <Property Name="RoutingRuleSet" Hidden="true" />
+      <Property Name="SalesLiteratureItemSet" Hidden="true" />
+      <Property Name="SalesLiteratureSet" Hidden="true" />
+      <Property Name="SalesOrderDetailSet" Hidden="true" />
+      <Property Name="SalesOrderSet" Hidden="true" />
+      <Property Name="SavedQuerySet" Hidden="true" />
+      <Property Name="SavedQueryVisualizationSet" Hidden="true" />
+      <Property Name="SdkMessageFilterSet" Hidden="true" />
+      <Property Name="SdkMessagePairSet" Hidden="true" />
+      <Property Name="SdkMessageProcessingStepImageSet" Hidden="true" />
+      <Property Name="SdkMessageProcessingStepSecureConfigSet" Hidden="true" />
+      <Property Name="SdkMessageProcessingStepSet" Hidden="true" />
+      <Property Name="SdkMessageRequestFieldSet" Hidden="true" />
+      <Property Name="SdkMessageRequestSet" Hidden="true" />
+      <Property Name="SdkMessageResponseFieldSet" Hidden="true" />
+      <Property Name="SdkMessageResponseSet" Hidden="true" />
+      <Property Name="SdkMessageSet" Hidden="true" />
+      <Property Name="SemiAnnualFiscalCalendarSet" Hidden="true" />
+      <Property Name="ServiceAppointmentSet" Hidden="true" />
+      <Property Name="ServiceContractContactsSet" Hidden="true" />
+      <Property Name="ServiceEndpointSet" Hidden="true" />
+      <Property Name="ServiceSet" Hidden="true" />
+      <Property Name="SharePointDataSet" Hidden="true" />
+      <Property Name="SharePointDocumentLocationSet" Hidden="true" />
+      <Property Name="SharePointDocumentSet" Hidden="true" />
+      <Property Name="SharePointSiteSet" Hidden="true" />
+      <Property Name="SimilarityRuleSet" Hidden="true" />
+      <Property Name="SiteMapSet" Hidden="true" />
+      <Property Name="SiteSet" Hidden="true" />
+      <Property Name="SLAItemSet" Hidden="true" />
+      <Property Name="SLAKPIInstanceSet" Hidden="true" />
+      <Property Name="SLASet" Hidden="true" />
+      <Property Name="SocialActivitySet" Hidden="true" />
+      <Property Name="SocialInsightsConfigurationSet" Hidden="true" />
+      <Property Name="SocialProfileSet" Hidden="true" />
+      <Property Name="SolutionComponentSet" Hidden="true" />
+      <Property Name="SolutionSet" Hidden="true" />
+      <Property Name="SubjectSet" Hidden="true" />
+      <Property Name="SubscriptionManuallyTrackedObjectSet" Hidden="true" />
+      <Property Name="SubscriptionTrackingDeletedObjectSet" Hidden="true" />
+      <Property Name="SyncErrorSet" Hidden="true" />
+      <Property Name="SystemFormSet" Hidden="true" />
+      <Property Name="SystemUserLicensesSet" Hidden="true" />
+      <Property Name="SystemUserProfilesSet" Hidden="true" />
+      <Property Name="SystemUserRolesSet" Hidden="true" />
+      <Property Name="SystemUserSet" Hidden="true" />
+      <Property Name="SystemUserSyncMappingProfilesSet" Hidden="true" />
+      <Property Name="TeamMembershipSet" Hidden="true" />
+      <Property Name="TeamProfilesSet" Hidden="true" />
+      <Property Name="TeamRolesSet" Hidden="true" />
+      <Property Name="TeamSet" Hidden="true" />
+      <Property Name="TeamSyncAttributeMappingProfilesSet" Hidden="true" />
+      <Property Name="TeamTemplateSet" Hidden="true" />
+      <Property Name="TemplateSet" Hidden="true" />
+      <Property Name="TerritorySet" Hidden="true" />
+      <Property Name="TextAnalyticsEntityMappingSet" Hidden="true" />
+      <Property Name="ThemeSet" Hidden="true" />
+      <Property Name="TimeZoneDefinitionSet" Hidden="true" />
+      <Property Name="TimeZoneLocalizedNameSet" Hidden="true" />
+      <Property Name="TimeZoneRuleSet" Hidden="true" />
+      <Property Name="TopicHistorySet" Hidden="true" />
+      <Property Name="TopicModelConfigurationSet" Hidden="true" />
+      <Property Name="TopicModelExecutionHistorySet" Hidden="true" />
+      <Property Name="TopicModelSet" Hidden="true" />
+      <Property Name="TopicSet" Hidden="true" />
+      <Property Name="TraceLogSet" Hidden="true" />
+      <Property Name="TransactionCurrencySet" Hidden="true" />
+      <Property Name="TransformationMappingSet" Hidden="true" />
+      <Property Name="TransformationParameterMappingSet" Hidden="true" />
+      <Property Name="UoMScheduleSet" Hidden="true" />
+      <Property Name="UoMSet" Hidden="true" />
+      <Property Name="UserEntityInstanceDataSet" Hidden="true" />
+      <Property Name="UserEntityUISettingsSet" Hidden="true" />
+      <Property Name="UserFormSet" Hidden="true" />
+      <Property Name="UserMappingSet" Hidden="true" />
+      <Property Name="UserQuerySet" Hidden="true" />
+      <Property Name="UserQueryVisualizationSet" Hidden="true" />
+      <Property Name="UserSettingsSet" Hidden="true" />
+      <Property Name="WebResourceSet" Hidden="true" />
+      <Property Name="WorkflowDependencySet" Hidden="true" />
+      <Property Name="WorkflowLogSet" Hidden="true" />
+      <Property Name="WorkflowSet" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>rMT99zN2XPFvtl/27s09/+3hrfVZb35Nbfn+p3/f/sA=</HashCode>
+      <FileName>Helpers\MyOrganizationCrmSdkTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CrmExercise.Domain.Abstract.IServiceContextFactory">
+    <Position X="6" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Abstract\IServiceContextFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CrmExercise.Domain.Abstract.ICrmAccountRepository">
+    <Position X="2.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\ICrmAccountRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,28 @@
+﻿@using CrmExercise.WebUI.HtmlHelpers
+@using CrmExercise.WebUI.Models
+
+@model CrmExercise.WebUI.Models.AccountsListViewModel
+
+
+@{
+  ViewBag.Title = "Accounts";
+}
+
+@foreach (var a in Model.AccountLabels)
+{
+ 
+  @Html.Partial("AccountSummary", a)
+}
+
+
+  <div class="pagination-wrap col-xs-12">
+    <div class="btn-group pull-right">
+      @Html.PageLinks(Model.MiPagingInfo, x => Url.Action("List", new { page = x }))
+    </div>
+    @if (Model.MiPagingInfo.TotalPages > 0)
+    {
+      <label class="page-size pull-right">Items per page : @Model.MiPagingInfo.ItemsPerPage </label>
+    }
+  </div>
+
+ 
