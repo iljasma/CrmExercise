@@ -46,7 +46,9 @@ namespace CrmExercise.Domain.Concrete
         // Release managed resources.
         if (this.ServiceClient != null) this.ServiceClient = null;
         if (this.OrgService != null) this.OrgService = null;
+
         this.SvcContext?.Dispose();
+        if (this.SvcContext != null) this.SvcContext = null;
       }
       // Release unmanaged resources.
 

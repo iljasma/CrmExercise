@@ -2,7 +2,7 @@
 
 namespace CrmExercise.Domain.Abstract
 {
-  public interface IServiceContextFactory : IDisposable
+  public interface IServiceContextFactory: IDisposable
   {
     ServiceContext CreateContext();
   }

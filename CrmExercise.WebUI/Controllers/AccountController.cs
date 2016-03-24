@@ -20,6 +20,8 @@ namespace CrmExercise.WebUI.Controllers
 
     public AccountController(ICrmAccountRepository accountRepository)
     {
+      if (accountRepository == null) throw new ArgumentNullException("accountRepository");
+
       this._repository = accountRepository;
       if (ConfigurationManager.AppSettings["AccountListPageSize"].IsInt())
       {

@@ -9,11 +9,13 @@ namespace CrmExercise.Domain.Concrete
   public class CrmAccountRepository : ICrmAccountRepository
   {
 
-    private readonly ServiceContext _svcContext;
-    private readonly IServiceContextFactory _serviceContextFactory;
+    private ServiceContext _svcContext;
+    private IServiceContextFactory _serviceContextFactory;
 
     public CrmAccountRepository(IServiceContextFactory serviceContextFactory)
     {
+      if (serviceContextFactory == null) throw new ArgumentNullException("serviceContextFactory");
+
       this._serviceContextFactory = serviceContextFactory;
       this._svcContext = _serviceContextFactory.CreateContext();
     }
@@ -43,8 +45,11 @@ namespace CrmExercise.Domain.Concrete
       if (disposing)
       {
         // Release managed resources.
-        if (this._serviceContextFactory != null) _serviceContextFactory.Dispose();
-        if (this._svcContext != null) _svcContext.Dispose();
+        this._svcContext?.Dispose();
+        if (this._svcContext != null) this._svcContext = null;
+
+        this._serviceContextFactory?.Dispose();
+        if (this._serviceContextFactory != null) this._serviceContextFactory = null;
       }
       // Release unmanaged resources.
 

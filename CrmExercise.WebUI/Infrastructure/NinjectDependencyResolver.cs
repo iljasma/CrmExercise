@@ -111,8 +111,8 @@ namespace CrmExercise.WebUI.Infrastructure
       }
       else
       {
-        _kernel.Bind<ICrmAccountRepository>().To<CrmAccountRepository>();
-        _kernel.Bind<IServiceContextFactory>().To<ServiceContextFactory>().InSingletonScope();
+        _kernel.Bind<ICrmAccountRepository>().To<CrmAccountRepository>().InRequestScope();
+        _kernel.Bind<IServiceContextFactory>().To<ServiceContextFactory>().InRequestScope();
       }
     }
   }
